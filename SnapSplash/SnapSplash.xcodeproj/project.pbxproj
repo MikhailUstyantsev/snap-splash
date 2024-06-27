@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6BF9C74546854C4C15D64656 /* Pods_SnapSplash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F299A12D869F2E2A3C5C38 /* Pods_SnapSplash.framework */; };
+		830F52772C2DFDE700D70108 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F52762C2DFDE700D70108 /* AppDelegate.swift */; };
+		830F52792C2DFDE700D70108 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F52782C2DFDE700D70108 /* SceneDelegate.swift */; };
+		830F52802C2DFDE800D70108 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830F527F2C2DFDE800D70108 /* Assets.xcassets */; };
+		830F52832C2DFDE800D70108 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 830F52822C2DFDE800D70108 /* Base */; };
+		830F528C2C2DFE8D00D70108 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F528A2C2DFE8C00D70108 /* Constants.swift */; };
+		830F528F2C2DFE9900D70108 /* UIView + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F528D2C2DFE9900D70108 /* UIView + Ext.swift */; };
+		830F52932C2DFEA400D70108 /* PicGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F52902C2DFEA400D70108 /* PicGridCell.swift */; };
+		830F52962C2DFEAB00D70108 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F52942C2DFEAB00D70108 /* NetworkManager.swift */; };
+		830F529A2C2DFEB200D70108 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F52972C2DFEB200D70108 /* Endpoint.swift */; };
+		830F529B2C2DFEB200D70108 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F52982C2DFEB200D70108 /* Response.swift */; };
+		830F52A72C2DFEBE00D70108 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F529C2C2DFEBE00D70108 /* DetailViewController.swift */; };
+		830F52A82C2DFEBE00D70108 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F529D2C2DFEBE00D70108 /* DetailViewModel.swift */; };
+		830F52A92C2DFEBE00D70108 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F529F2C2DFEBE00D70108 /* FavoritesViewController.swift */; };
+		830F52AA2C2DFEBE00D70108 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F52A12C2DFEBE00D70108 /* SearchViewController.swift */; };
+		830F52AB2C2DFEBE00D70108 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F52A22C2DFEBE00D70108 /* SearchViewModel.swift */; };
+		830F52AC2C2DFEBE00D70108 /* SSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F52A42C2DFEBE00D70108 /* SSTabBarController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		585AED7B209ECB5F758CF2F9 /* Pods-SnapSplash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapSplash.release.xcconfig"; path = "Target Support Files/Pods-SnapSplash/Pods-SnapSplash.release.xcconfig"; sourceTree = "<group>"; };
+		59F299A12D869F2E2A3C5C38 /* Pods_SnapSplash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnapSplash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		830F52732C2DFDE700D70108 /* SnapSplash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapSplash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		830F52762C2DFDE700D70108 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		830F52782C2DFDE700D70108 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		830F527F2C2DFDE800D70108 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		830F52822C2DFDE800D70108 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		830F52842C2DFDE800D70108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		830F528A2C2DFE8C00D70108 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		830F528D2C2DFE9900D70108 /* UIView + Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView + Ext.swift"; sourceTree = "<group>"; };
+		830F52902C2DFEA400D70108 /* PicGridCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PicGridCell.swift; sourceTree = "<group>"; };
+		830F52942C2DFEAB00D70108 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		830F52972C2DFEB200D70108 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		830F52982C2DFEB200D70108 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		830F529C2C2DFEBE00D70108 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		830F529D2C2DFEBE00D70108 /* DetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		830F529F2C2DFEBE00D70108 /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		830F52A12C2DFEBE00D70108 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		830F52A22C2DFEBE00D70108 /* SearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		830F52A42C2DFEBE00D70108 /* SSTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSTabBarController.swift; sourceTree = "<group>"; };
+		E168112457A7F4AD9C76845A /* Pods-SnapSplash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapSplash.debug.xcconfig"; path = "Target Support Files/Pods-SnapSplash/Pods-SnapSplash.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		830F52702C2DFDE700D70108 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BF9C74546854C4C15D64656 /* Pods_SnapSplash.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E7DCEE133477B4D9EAF7D36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59F299A12D869F2E2A3C5C38 /* Pods_SnapSplash.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		830F526A2C2DFDE700D70108 = {
+			isa = PBXGroup;
+			children = (
+				830F52752C2DFDE700D70108 /* SnapSplash */,
+				830F52742C2DFDE700D70108 /* Products */,
+				E27B1B884331A2AD9DAFC27F /* Pods */,
+				7E7DCEE133477B4D9EAF7D36 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		830F52742C2DFDE700D70108 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				830F52732C2DFDE700D70108 /* SnapSplash.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		830F52752C2DFDE700D70108 /* SnapSplash */ = {
+			isa = PBXGroup;
+			children = (
+				830F528B2C2DFE8C00D70108 /* Utilities */,
+				830F528E2C2DFE9900D70108 /* Extensions */,
+				830F52922C2DFEA400D70108 /* Custom Views */,
+				830F52952C2DFEAB00D70108 /* Network Layer */,
+				830F52992C2DFEB200D70108 /* API */,
+				830F52A62C2DFEBE00D70108 /* Controllers */,
+				830F52762C2DFDE700D70108 /* AppDelegate.swift */,
+				830F52782C2DFDE700D70108 /* SceneDelegate.swift */,
+				830F527F2C2DFDE800D70108 /* Assets.xcassets */,
+				830F52812C2DFDE800D70108 /* LaunchScreen.storyboard */,
+				830F52842C2DFDE800D70108 /* Info.plist */,
+			);
+			path = SnapSplash;
+			sourceTree = "<group>";
+		};
+		830F528B2C2DFE8C00D70108 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				830F528A2C2DFE8C00D70108 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		830F528E2C2DFE9900D70108 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				830F528D2C2DFE9900D70108 /* UIView + Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		830F52912C2DFEA400D70108 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				830F52902C2DFEA400D70108 /* PicGridCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		830F52922C2DFEA400D70108 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				830F52912C2DFEA400D70108 /* Cells */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		830F52952C2DFEAB00D70108 /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+				830F52942C2DFEAB00D70108 /* NetworkManager.swift */,
+			);
+			path = "Network Layer";
+			sourceTree = "<group>";
+		};
+		830F52992C2DFEB200D70108 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				830F52972C2DFEB200D70108 /* Endpoint.swift */,
+				830F52982C2DFEB200D70108 /* Response.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		830F529E2C2DFEBE00D70108 /* DetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				830F529C2C2DFEBE00D70108 /* DetailViewController.swift */,
+				830F529D2C2DFEBE00D70108 /* DetailViewModel.swift */,
+			);
+			path = DetailViewController;
+			sourceTree = "<group>";
+		};
+		830F52A02C2DFEBE00D70108 /* FavoritesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				830F529F2C2DFEBE00D70108 /* FavoritesViewController.swift */,
+			);
+			path = FavoritesViewController;
+			sourceTree = "<group>";
+		};
+		830F52A32C2DFEBE00D70108 /* SearchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				830F52A12C2DFEBE00D70108 /* SearchViewController.swift */,
+				830F52A22C2DFEBE00D70108 /* SearchViewModel.swift */,
+			);
+			path = SearchViewController;
+			sourceTree = "<group>";
+		};
+		830F52A52C2DFEBE00D70108 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				830F52A42C2DFEBE00D70108 /* SSTabBarController.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		830F52A62C2DFEBE00D70108 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				830F52A52C2DFEBE00D70108 /* TabBarController */,
+				830F52A02C2DFEBE00D70108 /* FavoritesViewController */,
+				830F52A32C2DFEBE00D70108 /* SearchViewController */,
+				830F529E2C2DFEBE00D70108 /* DetailViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E27B1B884331A2AD9DAFC27F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E168112457A7F4AD9C76845A /* Pods-SnapSplash.debug.xcconfig */,
+				585AED7B209ECB5F758CF2F9 /* Pods-SnapSplash.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		830F52722C2DFDE700D70108 /* SnapSplash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 830F52872C2DFDE800D70108 /* Build configuration list for PBXNativeTarget "SnapSplash" */;
+			buildPhases = (
+				DBB5E14BE4108F8AF344FEBF /* [CP] Check Pods Manifest.lock */,
+				830F526F2C2DFDE700D70108 /* Sources */,
+				830F52702C2DFDE700D70108 /* Frameworks */,
+				830F52712C2DFDE700D70108 /* Resources */,
+				D28FD3B66EDE72CB6AEBCD0B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapSplash;
+			productName = SnapSplash;
+			productReference = 830F52732C2DFDE700D70108 /* SnapSplash.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		830F526B2C2DFDE700D70108 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					830F52722C2DFDE700D70108 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 830F526E2C2DFDE700D70108 /* Build configuration list for PBXProject "SnapSplash" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 830F526A2C2DFDE700D70108;
+			productRefGroup = 830F52742C2DFDE700D70108 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				830F52722C2DFDE700D70108 /* SnapSplash */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		830F52712C2DFDE700D70108 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830F52802C2DFDE800D70108 /* Assets.xcassets in Resources */,
+				830F52832C2DFDE800D70108 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D28FD3B66EDE72CB6AEBCD0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SnapSplash/Pods-SnapSplash-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SnapSplash/Pods-SnapSplash-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SnapSplash/Pods-SnapSplash-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBB5E14BE4108F8AF344FEBF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SnapSplash-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		830F526F2C2DFDE700D70108 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830F52A72C2DFEBE00D70108 /* DetailViewController.swift in Sources */,
+				830F529B2C2DFEB200D70108 /* Response.swift in Sources */,
+				830F529A2C2DFEB200D70108 /* Endpoint.swift in Sources */,
+				830F52A82C2DFEBE00D70108 /* DetailViewModel.swift in Sources */,
+				830F52962C2DFEAB00D70108 /* NetworkManager.swift in Sources */,
+				830F52AC2C2DFEBE00D70108 /* SSTabBarController.swift in Sources */,
+				830F52AB2C2DFEBE00D70108 /* SearchViewModel.swift in Sources */,
+				830F52772C2DFDE700D70108 /* AppDelegate.swift in Sources */,
+				830F52AA2C2DFEBE00D70108 /* SearchViewController.swift in Sources */,
+				830F52A92C2DFEBE00D70108 /* FavoritesViewController.swift in Sources */,
+				830F52792C2DFDE700D70108 /* SceneDelegate.swift in Sources */,
+				830F528F2C2DFE9900D70108 /* UIView + Ext.swift in Sources */,
+				830F528C2C2DFE8D00D70108 /* Constants.swift in Sources */,
+				830F52932C2DFEA400D70108 /* PicGridCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		830F52812C2DFDE800D70108 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				830F52822C2DFDE800D70108 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		830F52852C2DFDE800D70108 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		830F52862C2DFDE800D70108 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		830F52882C2DFDE800D70108 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E168112457A7F4AD9C76845A /* Pods-SnapSplash.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2R32CKST38;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SnapSplash/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mikhail.ustyantsev.SnapSplash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		830F52892C2DFDE800D70108 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 585AED7B209ECB5F758CF2F9 /* Pods-SnapSplash.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2R32CKST38;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SnapSplash/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = mikhail.ustyantsev.SnapSplash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		830F526E2C2DFDE700D70108 /* Build configuration list for PBXProject "SnapSplash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				830F52852C2DFDE800D70108 /* Debug */,
+				830F52862C2DFDE800D70108 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		830F52872C2DFDE800D70108 /* Build configuration list for PBXNativeTarget "SnapSplash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				830F52882C2DFDE800D70108 /* Debug */,
+				830F52892C2DFDE800D70108 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 830F526B2C2DFDE700D70108 /* Project object */;
+}
