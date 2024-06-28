@@ -48,14 +48,5 @@ struct Urls: Codable, Hashable {
 
 
 struct User: Codable, Hashable {
-    let id, username, name, firstName: String?
-    let lastName: String?
-    let portfolioURL: String?
-
-    enum CodingKeys: String, CodingKey {
-        case id, username, name
-        case firstName = "first_name"
-        case lastName = "last_name"
-        case portfolioURL = "portfolio_url"
-    }
+    let username, name: String?
 }

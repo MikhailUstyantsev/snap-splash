@@ -11,6 +11,7 @@ import Combine
 final class SearchViewModel: NSObject, UISearchResultsUpdating {
     
     var apiResponse = CurrentValueSubject<[Result], Never>([])
+    @Published var searchText = ""
     
     func getPhotos(matching request: String) {
         guard let url = Endpoint.searchPhotos(matching: request).url else {
@@ -28,7 +29,7 @@ final class SearchViewModel: NSObject, UISearchResultsUpdating {
     
     func updateSearchResults(for searchController: UISearchController) {
         guard let text = searchController.searchBar.text, !text.isEmpty else { return }
-        getPhotos(matching: text)
+        searchText = text
     }
     
 }

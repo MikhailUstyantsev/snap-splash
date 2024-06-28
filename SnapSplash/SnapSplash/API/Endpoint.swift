@@ -28,6 +28,17 @@ extension Endpoint {
         )
     }
     
+    
+    static func getPhoto(matching id: String) -> Endpoint {
+        return Endpoint(
+            path: "/photos/\(id)/",
+            queryItems: [
+                URLQueryItem(name: "client_id", value: "QYSs8AxVUw0hDAbtb8J3yq3ze0zPS6Gm6Diyzwqd3wE")
+            ]
+        )
+    }
+    
+    
 }
 
 

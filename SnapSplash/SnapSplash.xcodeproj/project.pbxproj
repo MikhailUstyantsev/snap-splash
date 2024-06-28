@@ -24,6 +24,8 @@
 		830F52AA2C2DFEBE00D70108 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F52A12C2DFEBE00D70108 /* SearchViewController.swift */; };
 		830F52AB2C2DFEBE00D70108 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F52A22C2DFEBE00D70108 /* SearchViewModel.swift */; };
 		830F52AC2C2DFEBE00D70108 /* SSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F52A42C2DFEBE00D70108 /* SSTabBarController.swift */; };
+		830F52AE2C2E4F1100D70108 /* UIViewController + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F52AD2C2E4F1100D70108 /* UIViewController + Ext.swift */; };
+		830F52B02C2E563E00D70108 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F52AF2C2E563E00D70108 /* Photo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		830F52A12C2DFEBE00D70108 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		830F52A22C2DFEBE00D70108 /* SearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		830F52A42C2DFEBE00D70108 /* SSTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSTabBarController.swift; sourceTree = "<group>"; };
+		830F52AD2C2E4F1100D70108 /* UIViewController + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Ext.swift"; sourceTree = "<group>"; };
+		830F52AF2C2E563E00D70108 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		E168112457A7F4AD9C76845A /* Pods-SnapSplash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapSplash.debug.xcconfig"; path = "Target Support Files/Pods-SnapSplash/Pods-SnapSplash.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				830F528D2C2DFE9900D70108 /* UIView + Ext.swift */,
+				830F52AD2C2E4F1100D70108 /* UIViewController + Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 			children = (
 				830F52972C2DFEB200D70108 /* Endpoint.swift */,
 				830F52982C2DFEB200D70108 /* Response.swift */,
+				830F52AF2C2E563E00D70108 /* Photo.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -158,8 +164,8 @@
 		830F529E2C2DFEBE00D70108 /* DetailViewController */ = {
 			isa = PBXGroup;
 			children = (
-				830F529C2C2DFEBE00D70108 /* DetailViewController.swift */,
 				830F529D2C2DFEBE00D70108 /* DetailViewModel.swift */,
+				830F529C2C2DFEBE00D70108 /* DetailViewController.swift */,
 			);
 			path = DetailViewController;
 			sourceTree = "<group>";
@@ -175,8 +181,8 @@
 		830F52A32C2DFEBE00D70108 /* SearchViewController */ = {
 			isa = PBXGroup;
 			children = (
-				830F52A12C2DFEBE00D70108 /* SearchViewController.swift */,
 				830F52A22C2DFEBE00D70108 /* SearchViewModel.swift */,
+				830F52A12C2DFEBE00D70108 /* SearchViewController.swift */,
 			);
 			path = SearchViewController;
 			sourceTree = "<group>";
@@ -193,8 +199,8 @@
 			isa = PBXGroup;
 			children = (
 				830F52A52C2DFEBE00D70108 /* TabBarController */,
-				830F52A02C2DFEBE00D70108 /* FavoritesViewController */,
 				830F52A32C2DFEBE00D70108 /* SearchViewController */,
+				830F52A02C2DFEBE00D70108 /* FavoritesViewController */,
 				830F529E2C2DFEBE00D70108 /* DetailViewController */,
 			);
 			path = Controllers;
@@ -323,6 +329,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				830F52B02C2E563E00D70108 /* Photo.swift in Sources */,
 				830F52A72C2DFEBE00D70108 /* DetailViewController.swift in Sources */,
 				830F529B2C2DFEB200D70108 /* Response.swift in Sources */,
 				830F529A2C2DFEB200D70108 /* Endpoint.swift in Sources */,
@@ -336,6 +343,7 @@
 				830F52792C2DFDE700D70108 /* SceneDelegate.swift in Sources */,
 				830F528F2C2DFE9900D70108 /* UIView + Ext.swift in Sources */,
 				830F528C2C2DFE8D00D70108 /* Constants.swift in Sources */,
+				830F52AE2C2E4F1100D70108 /* UIViewController + Ext.swift in Sources */,
 				830F52932C2DFEA400D70108 /* PicGridCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

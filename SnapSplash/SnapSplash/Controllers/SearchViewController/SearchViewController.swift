@@ -93,6 +93,14 @@ final class SearchViewController: UIViewController {
                 self.applySnapshot(with: result)
             }
             .store(in: &cancellables)
+        
+        viewModel.$searchText
+            .debounce(for: 0.5, scheduler: DispatchQueue.main)
+            .sink { [weak self] text in
+                guard let self else { return }
+                self.viewModel.getPhotos(matching: text)
+            }
+            .store(in: &cancellables)
     }
     
     
@@ -146,6 +154,10 @@ extension SearchViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard let item = collectionDataSource.itemIdentifier(for: indexPath) else { return }
-        print(item.user?.name)
+        guard let id = item.id else { return }
+        let detailViewModel = DetailViewModel()
+        detailViewModel.getPhoto(id: id)
+        let detailViewController = DetailViewController(viewModel: detailViewModel)
+        navigationController?.pushViewController(detailViewController, animated: true)
     }
 }
