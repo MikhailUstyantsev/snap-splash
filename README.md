@@ -14,7 +14,7 @@
 
 Также экран содержит кнопку, нажатие на которую может добавить фотографию в список любимых фотографий.
 Этот список сделан редактируемым, так, чтобы можно было удалать фотографии из списка избранного.
-
+_____________
 <div align="center">
   <img src="https://github.com/MikhailUstyantsev/snap-splash/blob/main/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202024-06-30%20at%2002.26.33.png" width="250"/>
 </div>
@@ -24,7 +24,7 @@
   </b>
 </div>
 
-
+_____________
 
 <div align="center">
   <img src="https://github.com/MikhailUstyantsev/snap-splash/blob/main/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202024-06-30%20at%2002.26.52.png" width="250"/>
@@ -35,6 +35,7 @@
   </b>
 </div>
 
+_____________
 
 <div align="center">
   <img src="https://github.com/MikhailUstyantsev/snap-splash/blob/main/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202024-06-30%20at%2002.26.59.png" width="250"/>
@@ -45,6 +46,7 @@
   </b>
 </div>
 
+_____________
 
 <div align="center">
   <img src="https://github.com/MikhailUstyantsev/snap-splash/blob/main/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202024-06-30%20at%2002.26.59.png" width="250"/>
@@ -55,6 +57,7 @@
   </b>
 </div>
 
+_____________
 
 <div align="center">
   <img src="https://github.com/MikhailUstyantsev/snap-splash/blob/main/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202024-06-30%20at%2002.27.05.png" width="250"/>
