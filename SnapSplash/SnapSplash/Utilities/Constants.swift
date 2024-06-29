@@ -18,6 +18,8 @@ enum Constants {
     
     enum String {
         static let random = "random"
+        static let favorites = "Favorites"
+        static let snapSplash = "SnapSplash"
     }
     
     
@@ -26,5 +28,6 @@ enum Constants {
         static let calendar = UIImage(systemName: "calendar")
         static let locationPin = UIImage(systemName: "mappin.and.ellipse")
         static let download = UIImage(systemName: "square.and.arrow.down")
+        static let placeholder = UIImage(named: "image-placeholder")
     }
 }

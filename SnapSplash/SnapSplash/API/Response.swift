@@ -10,7 +10,7 @@ import Foundation
 
 struct Response: Codable, Hashable {
     let total, totalPages: Int
-    let results: [Result]
+    let results: [Snap]
 
     enum CodingKeys: String, CodingKey {
         case total
@@ -20,7 +20,7 @@ struct Response: Codable, Hashable {
 }
 
 
-struct Result: Codable, Hashable {
+struct Snap: Codable, Hashable {
     let id: String?
     let createdAt: String?
     let description: String?
@@ -35,7 +35,7 @@ struct Result: Codable, Hashable {
         case urls
     }
     
-    static func == (lhs: Result, rhs: Result) -> Bool {
+    static func == (lhs: Snap, rhs: Snap) -> Bool {
         return lhs.id == rhs.id
     }
 }

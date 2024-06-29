@@ -19,6 +19,7 @@ final class DetailViewController: UIViewController {
     private let photoImageView = UIImageView()
     private let dimmedView = UIView()
     private let descriptionView = PhotoDescriptionView()
+    var photo: Photo?
     
     init(viewModel: DetailViewModel) {
         self.viewModel = viewModel
@@ -40,7 +41,9 @@ final class DetailViewController: UIViewController {
 
     private func configureViewController() {
         view.backgroundColor = .systemBackground
-        addTarget()
+        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonTapped))
+        navigationItem.rightBarButtonItem = addButton
+        
         addViews()
         configureViews()
         constraintViews()
@@ -53,7 +56,7 @@ final class DetailViewController: UIViewController {
                 guard let photo, let self else {
                     return
                 }
-               
+                self.photo = photo
                 self.setupDescriptionView(with: photo)
                 
                 guard let imageUrl = URL(string: photo.urls?.regular?.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "")  else {
@@ -120,9 +123,45 @@ final class DetailViewController: UIViewController {
     
     
     
-    private func addTarget() {
-       //for saving in persistence
+    @objc func addButtonTapped() {
+        //MARK: Saving in persistence
+        guard let photoToSave = photo else { return }
+        addPhotoToFavorites(photoToSave)
     }
+    
+    
+    func addPhotoToFavorites(_ photo: Photo) {
+        let favoritePhoto = Photo(
+            id: photo.id,
+            createdAt: photo.createdAt,
+            urls: photo.urls,
+            user: photo.user,
+            likes: photo.likes,
+            downloads: photo.downloads,
+            location: photo.location,
+            description: photo.description
+        )
+        
+        PersistenceManager.updateWith(photo: favoritePhoto, actionType: .add) { error in
+            guard let error = error else {
+                DispatchQueue.main.async {
+                    self.presentSSAlert(
+                        title: "Success!",
+                        message: "You have successfully favorited this user 🎉",
+                        buttonTitle: "Hooray!")
+                }
+                return
+            }
+            DispatchQueue.main.async {
+                self.presentSSAlert(
+                    title: "Something went wrong",
+                    message: error.rawValue,
+                    buttonTitle: "Ok")
+            }
+        }
+    }
+    
+    
     
 }
 
@@ -133,7 +172,7 @@ extension DetailViewController {
         DispatchQueue.main.async {
             self.descriptionView.photoAuthorView
                 .set(image: Constants.Image.personSquare,
-                     message: photo.user?.name ?? "unknown"
+                     message: photo.user?.name ?? "No author available"
                 )
             self.descriptionView.creationDateView
                 .set(image: Constants.Image.calendar,
@@ -141,7 +180,7 @@ extension DetailViewController {
                 )
             self.descriptionView.locationView
                 .set(image: Constants.Image.locationPin,
-                     message: "\(photo.location?.name ?? "unknown")"
+                     message: "\(photo.location?.name ?? "No location")"
                 )
             self.descriptionView.downloadsView
                 .set(image: Constants.Image.download,

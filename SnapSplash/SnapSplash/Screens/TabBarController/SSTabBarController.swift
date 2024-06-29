@@ -25,20 +25,22 @@ final class SSTabBarController: UITabBarController {
         let firstTab = UINavigationController(rootViewController: searchViewController)
         firstTab.navigationController?.navigationItem.backBarButtonItem?.title = ""
         
-        let secondTab = UINavigationController(rootViewController: FavoritesViewController())
+        let favoritesViewModel = FavoritesViewModel()
+        let favoritesViewController = FavoritesViewController(viewModel: favoritesViewModel)
+        let secondTab = UINavigationController(rootViewController: favoritesViewController)
         secondTab.navigationController?.navigationItem.backBarButtonItem?.title = ""
         
         
         viewControllers = [
             produceVC(
                 viewController: firstTab,
-                title: "Search",
+                tabBarItemTitle: "Search",
                 icon: UIImage(systemName: "magnifyingglass"),
                 selectedIcon: nil
             ),
             produceVC(
                 viewController: secondTab,
-                title: "Favorites",
+                tabBarItemTitle: "Favorites",
                 icon: UIImage(systemName: "star"),
                 selectedIcon: nil
             )
@@ -46,8 +48,8 @@ final class SSTabBarController: UITabBarController {
     }
     
     
-    private func produceVC(viewController: UIViewController, title: String, icon: UIImage?, selectedIcon: UIImage?) -> UIViewController {
-        viewController.tabBarItem.title = title
+    private func produceVC(viewController: UIViewController, tabBarItemTitle: String, icon: UIImage?, selectedIcon: UIImage?) -> UIViewController {
+        viewController.tabBarItem.title = tabBarItemTitle
         viewController.tabBarItem.image = icon
         viewController.tabBarItem.selectedImage = selectedIcon
         return viewController

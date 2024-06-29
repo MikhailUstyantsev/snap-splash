@@ -10,8 +10,10 @@ import Combine
 
 final class SearchViewModel: NSObject, UISearchResultsUpdating {
     
-    var apiResponse = CurrentValueSubject<[Result], Never>([])
+    var apiResponse = CurrentValueSubject<[Snap], Never>([])
     @Published var searchText = ""
+    let title = Constants.String.snapSplash
+    
     
     func getPhotos(matching request: String) {
         guard let url = Endpoint.searchPhotos(matching: request).url else {

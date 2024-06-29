@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Photo: Codable {
+struct Photo: Codable, Hashable {
     let id: String
     let createdAt: String?
     let urls: Urls?
@@ -27,15 +27,19 @@ struct Photo: Codable {
         case urls
         case location
     }
+    
+    static func == (lhs: Photo, rhs: Photo) -> Bool {
+        return lhs.id == rhs.id
+    }
 }
 
 
-struct Location: Codable {
+struct Location: Codable, Hashable {
     let name, city, country: String?
     let position: Position?
 }
 
 
-struct Position: Codable {
+struct Position: Codable, Hashable {
     let latitude, longitude: Double?
 }

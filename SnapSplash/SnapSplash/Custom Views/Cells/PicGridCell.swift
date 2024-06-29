@@ -10,7 +10,7 @@ import Kingfisher
 
 class PicGridCell: UICollectionViewCell {
     
-    var picItem: Result? {
+    var picItem: Snap? {
         didSet {
             guard let imageUrl = URL(string: picItem?.urls?.thumb?.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "")  else {
                 return

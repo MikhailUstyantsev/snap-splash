@@ -14,8 +14,8 @@ final class SearchViewController: UIViewController {
         case main
     }
     
-    typealias DataSource = UICollectionViewDiffableDataSource<Section, Result>
-    typealias Snapshot = NSDiffableDataSourceSnapshot<Section, Result>
+    typealias DataSource = UICollectionViewDiffableDataSource<Section, Snap>
+    typealias Snapshot = NSDiffableDataSourceSnapshot<Section, Snap>
     
     
     //MARK: - Properties
@@ -142,7 +142,7 @@ final class SearchViewController: UIViewController {
     }
     
     
-    private func applySnapshot(with items: [Result], animatingDifferences: Bool = true) {
+    private func applySnapshot(with items: [Snap], animatingDifferences: Bool = true) {
         var snapshot = Snapshot()
         snapshot.appendSections([.main])
         snapshot.appendItems(items)
@@ -161,4 +161,5 @@ extension SearchViewController: UICollectionViewDelegate {
         let detailViewController = DetailViewController(viewModel: detailViewModel)
         navigationController?.pushViewController(detailViewController, animated: true)
     }
+  
 }
