@@ -19,6 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         window?.rootViewController = SSTabBarController()
+        configureNavBar()
         window?.makeKeyAndVisible()
     }
 
@@ -49,7 +50,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-
-
+    
+    private func configureNavBar() {
+        UINavigationBar.appearance().barTintColor = .systemBackground
+        UINavigationBar.appearance().tintColor = .systemPink
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.systemPink]
+    }
 }
 

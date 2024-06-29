@@ -12,7 +12,7 @@ class PicGridCell: UICollectionViewCell {
     
     var picItem: Result? {
         didSet {
-            guard let imageUrl = URL(string: picItem?.urls?.small?.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "")  else {
+            guard let imageUrl = URL(string: picItem?.urls?.thumb?.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "")  else {
                 return
             }
             photoContainer.kf.setImage(with: imageUrl)

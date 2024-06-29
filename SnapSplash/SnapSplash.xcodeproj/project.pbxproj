@@ -26,6 +26,14 @@
 		830F52AC2C2DFEBE00D70108 /* SSTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F52A42C2DFEBE00D70108 /* SSTabBarController.swift */; };
 		830F52AE2C2E4F1100D70108 /* UIViewController + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F52AD2C2E4F1100D70108 /* UIViewController + Ext.swift */; };
 		830F52B02C2E563E00D70108 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F52AF2C2E563E00D70108 /* Photo.swift */; };
+		830F52B52C2FB1C400D70108 /* SSAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F52B42C2FB1C400D70108 /* SSAlertVC.swift */; };
+		830F52B82C2FB20000D70108 /* SSAlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F52B72C2FB20000D70108 /* SSAlertContainerView.swift */; };
+		830F52BB2C2FB26800D70108 /* SSTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F52BA2C2FB26800D70108 /* SSTitleLabel.swift */; };
+		830F52BD2C2FB2AA00D70108 /* SSBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F52BC2C2FB2AA00D70108 /* SSBodyLabel.swift */; };
+		830F52C02C2FB30600D70108 /* SSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F52BF2C2FB30600D70108 /* SSButton.swift */; };
+		830F52C32C3041AC00D70108 /* BaseInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F52C22C3041AC00D70108 /* BaseInfoView.swift */; };
+		830F52C52C3044D700D70108 /* PhotoDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F52C42C3044D700D70108 /* PhotoDescriptionView.swift */; };
+		830F52C72C30554600D70108 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830F52C62C30554600D70108 /* PersistenceManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +59,14 @@
 		830F52A42C2DFEBE00D70108 /* SSTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSTabBarController.swift; sourceTree = "<group>"; };
 		830F52AD2C2E4F1100D70108 /* UIViewController + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Ext.swift"; sourceTree = "<group>"; };
 		830F52AF2C2E563E00D70108 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		830F52B42C2FB1C400D70108 /* SSAlertVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSAlertVC.swift; sourceTree = "<group>"; };
+		830F52B72C2FB20000D70108 /* SSAlertContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSAlertContainerView.swift; sourceTree = "<group>"; };
+		830F52BA2C2FB26800D70108 /* SSTitleLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSTitleLabel.swift; sourceTree = "<group>"; };
+		830F52BC2C2FB2AA00D70108 /* SSBodyLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSBodyLabel.swift; sourceTree = "<group>"; };
+		830F52BF2C2FB30600D70108 /* SSButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSButton.swift; sourceTree = "<group>"; };
+		830F52C22C3041AC00D70108 /* BaseInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInfoView.swift; sourceTree = "<group>"; };
+		830F52C42C3044D700D70108 /* PhotoDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDescriptionView.swift; sourceTree = "<group>"; };
+		830F52C62C30554600D70108 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		E168112457A7F4AD9C76845A /* Pods-SnapSplash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapSplash.debug.xcconfig"; path = "Target Support Files/Pods-SnapSplash/Pods-SnapSplash.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,9 +114,9 @@
 				830F528B2C2DFE8C00D70108 /* Utilities */,
 				830F528E2C2DFE9900D70108 /* Extensions */,
 				830F52922C2DFEA400D70108 /* Custom Views */,
-				830F52952C2DFEAB00D70108 /* Network Layer */,
+				830F52952C2DFEAB00D70108 /* Managers */,
 				830F52992C2DFEB200D70108 /* API */,
-				830F52A62C2DFEBE00D70108 /* Controllers */,
+				830F52A62C2DFEBE00D70108 /* Screens */,
 				830F52762C2DFDE700D70108 /* AppDelegate.swift */,
 				830F52782C2DFDE700D70108 /* SceneDelegate.swift */,
 				830F527F2C2DFDE800D70108 /* Assets.xcassets */,
@@ -138,17 +154,22 @@
 		830F52922C2DFEA400D70108 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				830F52BE2C2FB2F800D70108 /* Buttons */,
+				830F52B92C2FB25E00D70108 /* Labels */,
+				830F52B62C2FB1F300D70108 /* Views */,
+				830F52B32C2FB18500D70108 /* Conrollers */,
 				830F52912C2DFEA400D70108 /* Cells */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
 		};
-		830F52952C2DFEAB00D70108 /* Network Layer */ = {
+		830F52952C2DFEAB00D70108 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
 				830F52942C2DFEAB00D70108 /* NetworkManager.swift */,
+				830F52C62C30554600D70108 /* PersistenceManager.swift */,
 			);
-			path = "Network Layer";
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		830F52992C2DFEB200D70108 /* API */ = {
@@ -195,7 +216,7 @@
 			path = TabBarController;
 			sourceTree = "<group>";
 		};
-		830F52A62C2DFEBE00D70108 /* Controllers */ = {
+		830F52A62C2DFEBE00D70108 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
 				830F52A52C2DFEBE00D70108 /* TabBarController */,
@@ -203,7 +224,42 @@
 				830F52A02C2DFEBE00D70108 /* FavoritesViewController */,
 				830F529E2C2DFEBE00D70108 /* DetailViewController */,
 			);
-			path = Controllers;
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		830F52B32C2FB18500D70108 /* Conrollers */ = {
+			isa = PBXGroup;
+			children = (
+				830F52B42C2FB1C400D70108 /* SSAlertVC.swift */,
+			);
+			path = Conrollers;
+			sourceTree = "<group>";
+		};
+		830F52B62C2FB1F300D70108 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				830F52B72C2FB20000D70108 /* SSAlertContainerView.swift */,
+				830F52C22C3041AC00D70108 /* BaseInfoView.swift */,
+				830F52C42C3044D700D70108 /* PhotoDescriptionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		830F52B92C2FB25E00D70108 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				830F52BA2C2FB26800D70108 /* SSTitleLabel.swift */,
+				830F52BC2C2FB2AA00D70108 /* SSBodyLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
+		830F52BE2C2FB2F800D70108 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				830F52BF2C2FB30600D70108 /* SSButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 		E27B1B884331A2AD9DAFC27F /* Pods */ = {
@@ -329,7 +385,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				830F52C52C3044D700D70108 /* PhotoDescriptionView.swift in Sources */,
+				830F52B82C2FB20000D70108 /* SSAlertContainerView.swift in Sources */,
 				830F52B02C2E563E00D70108 /* Photo.swift in Sources */,
+				830F52C72C30554600D70108 /* PersistenceManager.swift in Sources */,
 				830F52A72C2DFEBE00D70108 /* DetailViewController.swift in Sources */,
 				830F529B2C2DFEB200D70108 /* Response.swift in Sources */,
 				830F529A2C2DFEB200D70108 /* Endpoint.swift in Sources */,
@@ -343,8 +402,13 @@
 				830F52792C2DFDE700D70108 /* SceneDelegate.swift in Sources */,
 				830F528F2C2DFE9900D70108 /* UIView + Ext.swift in Sources */,
 				830F528C2C2DFE8D00D70108 /* Constants.swift in Sources */,
+				830F52B52C2FB1C400D70108 /* SSAlertVC.swift in Sources */,
 				830F52AE2C2E4F1100D70108 /* UIViewController + Ext.swift in Sources */,
+				830F52C02C2FB30600D70108 /* SSButton.swift in Sources */,
+				830F52BB2C2FB26800D70108 /* SSTitleLabel.swift in Sources */,
+				830F52C32C3041AC00D70108 /* BaseInfoView.swift in Sources */,
 				830F52932C2DFEA400D70108 /* PicGridCell.swift in Sources */,
+				830F52BD2C2FB2AA00D70108 /* SSBodyLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

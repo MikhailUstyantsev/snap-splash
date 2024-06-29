@@ -14,6 +14,7 @@ final class SSTabBarController: UITabBarController {
         super.viewDidLoad()
         createTabBar()
         self.navigationController?.navigationBar.isHidden = true
+        tabBar.tintColor = .systemPink
         delegate = self
     }
     

@@ -5,7 +5,7 @@
 //  Created by Mikhail Ustyantsev on 26.06.2024.
 //
 
-import Foundation
+import UIKit
 
 enum Constants {
     
@@ -20,4 +20,11 @@ enum Constants {
         static let random = "random"
     }
     
+    
+    enum Image {
+        static let personSquare = UIImage(systemName: "person.crop.square")
+        static let calendar = UIImage(systemName: "calendar")
+        static let locationPin = UIImage(systemName: "mappin.and.ellipse")
+        static let download = UIImage(systemName: "square.and.arrow.down")
+    }
 }

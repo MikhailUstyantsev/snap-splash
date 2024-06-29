@@ -61,6 +61,7 @@ final class SearchViewController: UIViewController {
         navigationItem.searchController = searchController
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchResultsUpdater = viewModel
+        searchController.searchBar.tintColor = .systemPink
         navigationItem.hidesSearchBarWhenScrolling = false
     }
 
@@ -95,7 +96,7 @@ final class SearchViewController: UIViewController {
             .store(in: &cancellables)
         
         viewModel.$searchText
-            .debounce(for: 0.5, scheduler: DispatchQueue.main)
+            .debounce(for: 0.3, scheduler: DispatchQueue.main)
             .sink { [weak self] text in
                 guard let self else { return }
                 self.viewModel.getPhotos(matching: text)
